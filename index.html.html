@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <style>
+            button
+        {
+            height:60px;
+            width:100px;
+            border-radius: 10px;
+            background-color: blue;
+            color:white;
+            transform:scale(1);
+            margin: 60px auto;
+            
+            
+        }
+        body
+        {
+            text-align: center;
+            margin:100px auto;
+            background-color: pink;
+        }
+                #box1
+        {
+            width: 800px;
+            height: 300px;
+            margin:0px auto;
+            background-color: aqua;
+            transform:scale(1);
+            box-shadow:inset 0px 0px 70px gray;
+            border-radius: 20px;
+            text-align: 30px auto;
+
+        }
+        #box1
+        {
+            color: red;
+            text-shadow: 0px 0px 10px;
+        }
+
+        </style>
+    </head>
+    <body>
+        
+        <div id="box1">
+            <h1 class="m1">Indian States-Click to See  capital</h1>
+            <button onclick="soCapital('Lacknow')">Utter Pradesh</button>
+            <button onclick="soCapital('Patana')">Bihar</button>
+            <button onclick="soCapital('Kolkata')">WestBangal</button>
+            <button onclick="soCapital('Chandhigadh')">Hariyana</button>
+            <Button onclick="soCapital('Panji')">Goa</Button>
+
+            <h2 id="output"></h2>
+        </div>
+        <script>
+            function soCapital(capital)
+            {
+                document.getElementById("output").innerText = "capital:" + capital;
+            }
+        </script>
+    </body>
+</html>
